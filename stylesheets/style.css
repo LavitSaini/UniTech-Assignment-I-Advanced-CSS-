@@ -217,7 +217,7 @@ img {
 }
 
 #home-section {
-  background-image: url(/media/images/banner-1.jpg);
+  background-image: url("/media/images/banner-1.jpg");
   background-size: cover;
   background-position: center;
   padding: 12rem 0rem;
