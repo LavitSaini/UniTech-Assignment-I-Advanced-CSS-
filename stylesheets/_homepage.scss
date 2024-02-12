@@ -1,0 +1,722 @@
+// Home Page Styles
+
+// Header Section Styles
+
+// Header Bar
+
+#header .header-bar-bg {
+  background-color: $primary;
+}
+
+// Bar info
+
+.header-bar-bg .header-bar {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.header-bar .bar-info {
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 200;
+  gap: 1rem;
+  letter-spacing: 0.5px;
+}
+
+// Bar Icons
+
+.bar-icons li {
+  margin-left: 1.5rem;
+}
+
+.bar-icons a {
+  color: #ffffff;
+}
+
+// Header Navbar
+
+#header .header-navbar-bg {
+  background-color: #f2f2f2;
+  position: fixed;
+  width: 100%;
+  top: 2.5rem;
+  box-shadow: 0px 0px 4px 2px #00000063;
+}
+
+// Navbar Logo
+
+.nav-logo .brand {
+  color: $primary;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.brand strong {
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+// Menu Bar
+.header-navbar label {
+  display: none;
+}
+
+.header-navbar input {
+  display: none;
+}
+
+// Navbar Links
+
+.nav-links a {
+  display: inline-block;
+  padding: 1.25rem 0.75rem;
+  color: $secondary;
+  font-size: 0.8rem;
+  font-weight: 600;
+  position: relative;
+  margin-left: 0.75rem;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+  background-color: #eb5f61;
+  transition: all 0.3s ease;
+}
+
+.nav-links .active {
+  color: #ffffff;
+  background-color: #eb5f61;
+  font-weight: 500;
+}
+
+// Drop Down
+
+.nav-links .drop-down {
+  display: none;
+  position: absolute;
+  background-color: #e6e6e6;
+  transform: translateX(16%);
+}
+
+.nav-links li:hover .drop-down {
+  display: block;
+}
+
+// Drop Down
+
+.drop-down a {
+  margin-left: 0;
+  width: 100%;
+}
+
+// Home Section Styles
+
+#home-section {
+  background-image: url(/media/images/banner-1.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 12rem 0rem;
+}
+
+.home-content .home-text-content {
+  width: 36rem;
+}
+
+.home-text-content h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: 1;
+  color: $heading;
+  letter-spacing: -2px;
+  word-spacing: 2px;
+}
+
+.home-text-content p {
+  margin: 1rem 0rem;
+  color: $heading;
+  font-weight: 600;
+}
+
+.home-text-content .home-btn {
+  @extend %btn;
+  background-color: $primary;
+  color: #ffffff;
+  &:hover {
+    background-color: #ffffff;
+    color: $primary;
+    transition: all 0.3s ease;
+    border-color: $primary;
+  }
+}
+
+// Services Section Styles
+
+#services-section {
+  gap: 3rem;
+}
+
+.services-content h3 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+}
+
+.services-content p {
+  margin-top: 1rem;
+  color: $text;
+}
+
+.services-cards .card {
+  flex: 0 1 32%;
+  padding: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+}
+
+// Cards Background Extend
+%backgroundImage {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.services-cards .card .card-1-bg {
+  @extend %backgroundImage;
+  background-image: url(/media/images/consulting.svg);
+}
+
+.services-cards .card .card-2-bg {
+  @extend %backgroundImage;
+  background-image: url(/media/images/finance.svg);
+}
+
+.services-cards .card .card-3-bg {
+  @extend %backgroundImage;
+  background-image: url(/media/images/technology.svg);
+}
+
+.services-cards .card h4 {
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: $heading;
+}
+
+.services-cards .card p {
+  margin: 1rem 0rem;
+  line-height: 1.5;
+  color: $text;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.card .read-more-btn {
+  @extend %btn;
+  color: $primary;
+  border-color: $primary;
+  font-size: 0.8rem;
+  font-weight: 500;
+  &:hover {
+    background-color: $primary;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+}
+
+// Solution Section Styles
+
+#solution-section {
+  background-color: #f2f2f2;
+}
+
+.solution-content .content-text {
+  width: 500px;
+}
+
+.solution-content .content-text h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: $heading;
+}
+
+.solution-content .content-text p {
+  margin: 1.25rem 0rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: $text;
+  line-height: 1.5;
+}
+
+.content-text .read-more-btn {
+  @extend %btn;
+  color: $primary;
+  border-color: $primary;
+  font-size: 0.8rem;
+  font-weight: 500;
+  &:hover {
+    background-color: $primary;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+}
+
+// Consulting Section Styles
+
+#consulting-section .consulting-content {
+  flex: 0 1 38%;
+}
+
+.consulting-content img {
+  width: 5rem;
+}
+
+.consulting-content h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 900;
+  margin: 1rem 0rem;
+  letter-spacing: -0.5px;
+  word-spacing: 1px;
+}
+
+.consulting-content p {
+  color: $text;
+  font-size: 0.9rem;
+  letter-spacing: 0px;
+  margin-bottom: 1.75rem;
+  line-height: 1.4;
+}
+
+.consulting-content .read-more-btn {
+  @extend %btn;
+  color: $primary;
+  border-color: $primary;
+  font-size: 0.8rem;
+  font-weight: 500;
+  &:hover {
+    background-color: $primary;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+}
+
+#consulting-section .consulting-img {
+  flex: 0 1 50%;
+}
+
+.consulting-img img {
+  border-radius: 0.5rem;
+}
+
+// Request Section Styles
+#request-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  background-color: $primary;
+}
+
+.request-content .content-text h6 {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.request-content .content-text p {
+  color: #ffffff;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+.content-btn .request-btn {
+  @extend %btn;
+  color: #ffffff;
+  border-color: #ffffff;
+  font-size: 0.8rem;
+  &:hover {
+    background-color: #ffffff;
+    color: $primary;
+    transition: all 0.3s ease;
+  }
+}
+
+// Industry Section Styles
+
+#industry-section {
+  padding-bottom: 0;
+}
+
+#industry-section .industry-content {
+  flex: 0 1 40%;
+}
+
+.industry-content span {
+  display: inline-block;
+  margin-bottom: 0.75rem;
+  color: $primary;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.industry-content h3 {
+  font-size: 1.5rem;
+  line-height: 1.4;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+  word-spacing: 1px;
+}
+
+.industry-content p {
+  color: $text;
+  font-size: 0.9rem;
+  letter-spacing: 0px;
+  margin-bottom: 1.75rem;
+  line-height: 1.6;
+}
+
+#industry-section .industry-img {
+  flex: 0 1 45%;
+}
+
+// Clients Section Styles
+#clients-section {
+  background-color: #f2f2f2;
+}
+
+.client-heading h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: #1b1e24;
+  margin-bottom: 2rem;
+}
+
+.client-content .clients {
+  gap: 3rem;
+}
+
+.clients .client {
+  cursor: pointer;
+  filter: saturate(0);
+  &:hover {
+    filter: saturate(1);
+    transition: all 0.3s ease;
+  }
+}
+
+// footer Section Styles
+#footer-section {
+  background-color: #343a40;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+// footer Top
+
+// footer info
+.footer-top .footer-info {
+  flex: 0 1 30%;
+}
+
+.footer-info h5 {
+  font-size: 1rem;
+  color: #b7b7b8;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.footer-info .info {
+  color: #b7b7b8;
+  font-size: 0.75rem;
+  font-weight: 200;
+  margin: 1rem 0rem;
+}
+
+.info span {
+  margin-left: 0.25rem;
+}
+
+// footer links
+.footer-top .footer-links {
+  flex: 0 1 40%;
+  justify-content: space-evenly;
+}
+
+.foot-links h5 {
+  font-size: 1rem;
+  color: #b7b7b8;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.foot-links .links {
+  gap: 0.75rem;
+}
+
+.links a {
+  color: #b7b7b8;
+  font-size: 0.75rem;
+  font-weight: 200;
+  margin-left: 0.25rem;
+  &:hover {
+    color: $primary;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+  }
+}
+
+// footer icons
+.footer-top .footer-icons {
+  flex: 0 1 20%;
+}
+
+.footer-icons h5 {
+  font-size: 1rem;
+  color: #b7b7b8;
+  font-weight: 400;
+  margin-bottom: 1.25rem;
+}
+
+.footer-icons .icons {
+  gap: 1rem;
+  margin-left: 0.25rem;
+}
+
+.icons a {
+  color: #b7b7b8;
+}
+
+// footer bottom
+
+#footer-section .footer-bottom {
+  padding-top: 3rem;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: #b7b7b8;
+  font-weight: 300;
+  margin-bottom: 0.6rem;
+}
+
+.footer-bottom p strong {
+  font-weight: 500;
+}
+
+.footer-bottom small {
+  font-size: 0.7rem;
+  color: #b7b7b8;
+  font-weight: 200;
+}
+
+// Home Page Rsponsive Styles
+
+@media screen and (max-width: 968px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+
+  // Header Section
+
+  // Navbar
+
+  .header-navbar-bg .header-navbar {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .header-navbar .nav-logo {
+    position: sticky;
+    z-index: 2;
+  }
+
+  .header-navbar .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100vh;
+    background-color: #000000bd;
+  }
+
+  .header-navbar label {
+    display: block;
+    padding: 0.5rem 0.6rem;
+    background-color: $primary;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    border: 2px solid transparent;
+    position: sticky;
+    z-index: 2;
+    &:hover {
+      background-color: transparent;
+      color: $primary;
+      border-color: $primary;
+      transition: all 0.3s ease;
+    }
+  }
+
+  .nav-links a {
+    color: #ffffff;
+    margin: 0.75rem 0rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  .header-navbar #menu-bar:checked ~ .nav-links {
+    display: flex;
+  }
+
+  .nav-links .drop-down {
+    background-color: $heading;
+    transform: translate(80%, -40%);
+    z-index: 3;
+  }
+
+  .drop-down a {
+    margin: 0;
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 668px) {
+  // Services Section
+  .services-cards {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .services-cards .card {
+    flex: 0 1 100%;
+  }
+
+  // Consulting Section
+  #consulting-section {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  #consulting-section .consulting-content {
+    flex: 0 1 100%;
+  }
+
+  #consulting-section .consulting-img {
+    flex: 0 1 70%;
+  }
+
+  // Insdustry Section
+  #industry-section {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #industry-section .industry-content {
+    flex: 0 1 100%;
+  }
+
+  #industry-section .industry-img {
+    flex: 0 1 70%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  html {
+    font-size: 10px;
+  }
+
+  // Clients Section
+  .clients .client:nth-child(2n) {
+    display: none;
+  }
+
+  // footer Section
+  #footer-section .footer-top {
+    flex-wrap: wrap;
+    gap: 2.5rem;
+  }
+
+  .footer-top .footer-top {
+    flex: 0 1 100%;
+  }
+
+  .footer-top .footer-links {
+    flex: 0 1 100%;
+    justify-content: flex-start;
+    gap: 3rem;
+  }
+
+  .footer-top .footer-icons {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  // Header Section
+
+  //Bar Section
+  .header-bar-bg .header-bar {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  .header-bar .bar-info {
+    justify-content: space-between;
+    flex: 0 1 100%;
+  }
+
+  .header-bar .bar-icons {
+    flex: 0 1 100%;
+    justify-content: center;
+  }
+
+  //Navbar Section
+
+  #header .header-navbar-bg {
+    top: 4rem;
+  }
+
+  //Home Section
+  .home-content .home-text-content {
+    margin-right: 5rem;
+    width: auto;
+  }
+
+  // Request Section
+  #request-section .request-content {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .request-content .content-text {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 8px;
+  }
+}

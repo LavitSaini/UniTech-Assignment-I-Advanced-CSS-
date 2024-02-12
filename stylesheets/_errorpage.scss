@@ -1,0 +1,62 @@
+// Error Page Styles
+
+// Error Section Styles
+#error-section {
+  gap: 3.25rem;
+}
+
+.error-heading h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: $heading;
+}
+
+.error-heading p {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: $text;
+  line-height: 1.5;
+}
+
+.contact-info .info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 32%;
+}
+
+.info-box div {
+  font-size: 2rem;
+  color: $primary;
+  background-color: #e1e1e1;
+  padding: 1.25rem;
+  border-radius: 50%;
+}
+
+.info-box h4 {
+  margin: 1.25rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: $heading;
+}
+
+.info-box p {
+  color: $heading;
+}
+
+// Error Page Responsive Styles
+
+@media screen and (max-width: 568px) {
+  // Error Section
+  #error-section .contact-info {
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+
+  .contact-info .info-box {
+    flex: 0 1 100%;
+  }
+}

@@ -1,0 +1,153 @@
+// About Page Styles
+
+// Hero Section
+#hero-section {
+  background-color: $primary;
+  margin-top: 3.25rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  color: #ffffff;
+  font-weight: 200;
+  letter-spacing: 0.5px;
+}
+
+// features Section
+#features-section {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+#features-section .features-img {
+  flex: 0 1 40%;
+}
+
+#features-section .features-content {
+  flex: 0 1 55%;
+}
+
+.features-content .box {
+  margin-bottom: 1.5rem;
+}
+
+.box .box-img {
+  font-size: 3.25rem;
+  color: $heading;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box .box-content {
+  flex: 0 1 80%;
+}
+
+.box-content h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  color: $heading;
+}
+
+.box-content p {
+  font-size: 0.9rem;
+  color: $text;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+// Team Section
+
+#team-section {
+  background-color: #f2f2f2;
+}
+
+#team-section .team-content {
+  gap: 3rem;
+}
+
+.team-content h2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: #1b1e24;
+  margin-bottom: 1rem;
+}
+
+.team-content p {
+  color: #1b1e24;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.team-members .team-member {
+  flex: 0 1 23%;
+}
+
+.team-member .member-post {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+.member-post h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.member-post span {
+  color: $primary;
+  font-size: 0.85rem;
+}
+
+// Solution Section
+
+#solution-section {
+  background-color: #ffffff;
+}
+
+// About Page Responsive Styles
+
+@media screen and (max-width: 668px) {
+  // features Section
+  #features-section {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  #features-section .features-img {
+    flex: 0 1 40%;
+  }
+  
+  #features-section .features-content {
+    flex: 0 1 100%;
+  }
+
+  // Team Section
+  .team-content .team-members{
+     flex-wrap: wrap;
+     justify-content: center;
+     gap: 1.75rem;
+  }
+
+  .team-members .team-member{
+    flex: 0 1 48%;
+  }
+}
+
+@media screen and (max-width: 468px){
+  // Team Section
+  .team-members .team-member{
+    flex: 0 1 70%;
+  }
+}

@@ -1,0 +1,129 @@
+// Services Page Styles
+
+// Industry Section
+#industry-section {
+  padding-bottom: 5rem;
+}
+
+// Products Section
+#products-section {
+  background-color: #f2f2f2;
+}
+
+.products-content .products-heading {
+  margin-bottom: 3.25rem;
+}
+
+.products-heading h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: $heading;
+}
+
+.products-heading p {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: $text;
+  line-height: 1.5;
+}
+
+.products-content .cards-line {
+  margin: 2.75rem 0rem;
+  border: none;
+  height: 1px;
+  background-color: #d7d7d7;
+}
+
+.products-content .product-cards {
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.product-cards .card {
+  flex: 0 1 31%;
+}
+
+.product-cards .card img {
+  width: 4.75rem;
+}
+
+.product-cards .card h4 {
+  font-size: 1.2rem;
+  color: $heading;
+  font-weight: 600;
+  margin: 0.75rem 0rem;
+}
+
+.product-cards .card p {
+  font-weight: 500;
+  color: $heading;
+  line-height: 1.5;
+}
+
+// Deals Request Section
+.request-content .content-text {
+  gap: 0.75rem;
+}
+
+.request-content .content-text span {
+  color: #ffffff;
+  font-size: 2.25rem;
+  font-weight: 100;
+}
+
+.request-content .content-text p {
+  margin-top: 0;
+}
+
+// Consulting Section
+
+#consulting-section {
+  gap: 3.25rem;
+}
+
+.consulting-header .consulting-heading {
+  flex: 0 1 65%;
+}
+
+.consulting-heading h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: $heading;
+}
+
+.consulting-heading p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  color: $text;
+  line-height: 1.5;
+}
+
+#consulting-section .consulting-body {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  // Consulting Section
+  .consulting-header .consulting-heading {
+    padding: 0rem 3rem;
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+
+  //Products Section
+  .product-cards .card {
+    flex: 0 1 100%;
+  }
+
+  .product-cards .card img {
+    width: 3.25rem;
+  }
+}

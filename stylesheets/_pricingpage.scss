@@ -1,0 +1,144 @@
+// Pricing Page Styles
+
+// Plan Purchasing Section
+#plans-section {
+  background-color: #f2f2f2;
+}
+
+.plans-content .plans-heading {
+  margin-bottom: 3.25rem;
+}
+
+.plans-heading p {
+  color: $text;
+  line-height: 1.5;
+}
+
+.plan-boxes .box {
+  padding: 2rem;
+  border: 1px solid #d4d4d4;
+  background-color: #ffffff;
+  flex: 0 1 32%;
+  border-radius: 0.25rem;
+}
+
+.box h5 {
+  font-size: 1.2rem;
+  color: $heading;
+  font-weight: 500;
+}
+
+.box h3 {
+  font-size: 2.25rem;
+  font-weight: 900;
+  color: $heading;
+  margin-top: 1.25rem;
+}
+
+.box p {
+  color: $text;
+  font-weight: 400;
+  margin-top: 0.75rem;
+  margin-bottom: 1.75rem;
+}
+
+.box .features h4 {
+  font-size: 1.25;
+  color: $heading;
+  margin-bottom: 1.75rem;
+}
+
+.features ul li {
+  margin: 1.25rem 0rem;
+  font-weight: 400;
+}
+
+.box .download-btn {
+  padding: 0.75rem 1.25rem;
+  border: 1px solid $primary;
+  background-color: transparent;
+  border-radius: 3rem;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: $primary;
+  margin-top: 0.75rem;
+  &:hover {
+    background-color: $primary;
+    color: #ffffff;
+    transition: all 0.3s ease;
+  }
+}
+
+.box .download-active {
+  background-color: $primary;
+  color: #ffffff;
+  &:hover {
+    background-color: transparent;
+    color: $primary;
+    transition: all 0.3s ease;
+  }
+}
+
+// Faq Section
+#faq-section .faq-content {
+  gap: 3.75rem;
+}
+
+.faq-heading h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.5px;
+  color: #1b1e24;
+  margin-bottom: 1rem;
+}
+
+.faq-heading p {
+  color: $text;
+}
+
+.faq-content .faq-questions {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.faq-questions .question {
+  flex: 0 1 48%;
+  padding: 1.5rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 0.25rem;
+}
+
+.question h6 {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: $heading;
+}
+
+.question p {
+  line-height: 1.6;
+  color: $text;
+}
+
+// Pricing Page Responsive Styles
+
+@media screen and (max-width: 668px) {
+  // Faq Section
+  .faq-questions .question {
+    flex: 0 1 100%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  // Plan Purchasing Section
+  .plans-content .plan-boxes {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+
+  .plan-boxes .box {
+    flex: 0 1 80%;
+  }
+}
