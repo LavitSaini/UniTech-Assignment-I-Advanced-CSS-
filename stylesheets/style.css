@@ -192,7 +192,7 @@ img {
 }
 
 #home-section {
-  background-image: url(/stylesheets/banner-1.jpg);
+  background-image: url("/stylesheets/banner-1.jpg");
   background-size: cover;
   background-position: center;
   padding: 12rem 0rem;
@@ -261,15 +261,15 @@ img {
 }
 
 .services-cards .card .card-1-bg {
-  background-image: url(/stylesheets/consulting.svg);
+  background-image: url("/stylesheets/consulting.svg");
 }
 
 .services-cards .card .card-2-bg {
-  background-image: url(/stylesheets/finance.svg);
+  background-image: url("/stylesheets/finance.svg");
 }
 
 .services-cards .card .card-3-bg {
-  background-image: url(/stylesheets/technology.svg);
+  background-image: url("/stylesheets/technology.svg");
 }
 
 .services-cards .card h4 {
