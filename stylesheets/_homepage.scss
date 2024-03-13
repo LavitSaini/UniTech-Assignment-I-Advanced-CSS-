@@ -83,7 +83,7 @@
 // Home Section Styles
 
 #home-section {
-  background-image: url(stylesheets/banner-1.jpg);
+  background-image: url(banner-1.jpg);
   background-size: cover;
   background-position: center;
   padding: 12rem 0rem;
@@ -157,17 +157,17 @@
 
 .services-cards .card .card-1-bg {
   @extend %backgroundImage;
-  background-image: url(stylesheets/consulting.svg);
+  background-image: url(consulting.svg);
 }
 
 .services-cards .card .card-2-bg {
   @extend %backgroundImage;
-  background-image: url(stylesheets/finance.svg);
+  background-image: url(finance.svg);
 }
 
 .services-cards .card .card-3-bg {
   @extend %backgroundImage;
-  background-image: url(stylesheets/technology.svg);
+  background-image: url(technology.svg);
 }
 
 .services-cards .card h4 {
